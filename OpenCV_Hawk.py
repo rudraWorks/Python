@@ -1,4 +1,4 @@
-passwrd='###@@@777rps'
+
 
 
 from cv2 import cv2
@@ -32,7 +32,7 @@ def sendmail(file):
     msg.attach(image)
 
 
-
+    passwrd='your password'
     send=smtplib.SMTP_SSL("smtp.gmail.com",465)
     send.login('merudra754@gmail.com',passwrd)
     send.sendmail('merudra754@gmail.com','srudra754@gmail.com',msg.as_string())
